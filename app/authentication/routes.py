@@ -22,7 +22,6 @@ def signup():
             db.session.commit()
 
 
-
             flash(f'You have made a new account {email}', 'User-created')
             return redirect(url_for('site.home'))
     except:
